@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+}
+/* Navbar */
+nav {
+  display: flex;
+  height: 10vh;
+  /* border-bottom: 2px solid black; */
+  padding: 0rem 1rem;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.links {
+  display: flex;
+  /* width: 70%; */
+  justify-content: space-around;
+}
+.navlink {
+  text-decoration: none;
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 600;
+  color: #7b0a65;
+  margin: 0 2rem;
+}
+.nav-image {
+  width: 8%;
+}
+.nav-image > img {
+  width: 50%;
+}
+nav > button {
+  background: none;
+  border: none;
+  width: 8%;
+  display: none;
+}
+nav > button > img {
+  width: 30%;
+}
+.big {
+  margin-top: 10vh;
+  height: 100vh;
+  width: 90%;
+  position: fixed;
+  top: 0;
+  margin-left: 10%;
+  right: -90%;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  background-color: gainsboro;
+  transition: 0.5s ease;
+  z-index: 1000;
+  justify-content: center;
+}
+.big > div {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40vh;
+}
+.phonelinks {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  text-decoration: none;
+  color: black;
+  margin-bottom: 3vh;
+  font-size: 1em;
+}
+.big > p {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 0.7em;
+}
+.big.active {
+  right: 0;
+}
+/* media query */
+@media screen and (max-width: 860px) {
+  .nav-image {
+    width: 9%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .links {
+    display: none;
+  }
+  nav > button {
+    display: inline-block;
+    width: 10%;
+  }
+  nav > button > img {
+    width: 40%;
+  }
+  .nav-image {
+    width: 10%;
+  }
+}
+@media screen and (max-width: 620px) {
+  nav > button > img {
+    width: 50%;
+  }
+  .nav-image {
+    width: 15%;
+  }
+}
+@media screen and (max-width: 500px) {
+  nav > button > img {
+    width: 55%;
+  }
+  nav > button {
+    width: 12%;
+  }
+  .nav-image {
+    width: 17%;
+  }
+}
+@media screen and (max-width: 400px) {
+  nav > button {
+    width: 15%;
+  }
+  .nav-image {
+    width: 20%;
+  }
+}
