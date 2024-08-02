@@ -27,7 +27,6 @@ const Navbar = () => {
         </div>
         <button
           onClick={() => {
-            alert("I have been clicked");
             setMenu(!menu);
           }}
         >
