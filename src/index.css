@@ -98,21 +98,21 @@ nav > button > img {
   }
   nav > button {
     display: inline-block;
-    width: 10%;
+    width: 12%;
   }
-  nav > button > img {
-    width: 40%;
-  }
-  .nav-image {
-    width: 10%;
-  }
-}
-@media screen and (max-width: 620px) {
   nav > button > img {
     width: 50%;
   }
   .nav-image {
-    width: 15%;
+    width: 13%;
+  }
+}
+@media screen and (max-width: 620px) {
+  nav > button > img {
+    width: 55%;
+  }
+  .nav-image {
+    width: 17%;
   }
 }
 @media screen and (max-width: 500px) {
@@ -120,17 +120,17 @@ nav > button > img {
     width: 55%;
   }
   nav > button {
-    width: 12%;
-  }
-  .nav-image {
-    width: 17%;
-  }
-}
-@media screen and (max-width: 400px) {
-  nav > button {
     width: 15%;
   }
   .nav-image {
     width: 20%;
+  }
+}
+@media screen and (max-width: 400px) {
+  nav > button {
+    width: 18%;
+  }
+  .nav-image {
+    width: 24%;
   }
 }
