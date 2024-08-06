@@ -1,13 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&display=swap");
+@import url("https://fonts.cdnfonts.com/css/cocogoose");
+@import url("https://fonts.cdnfonts.com/css/caviar-dreams");
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 body {
+  /* background-color: aliceblue; */
+  background-image: linear-gradient(to top left, aliceblue, rgb(234, 234, 234));
+  /* display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center; */
 }
+
 /* Navbar */
 nav {
   display: flex;
@@ -27,8 +39,8 @@ nav {
 }
 .navlink {
   text-decoration: none;
-  font-family: "Titillium Web", sans-serif;
-  font-weight: 600;
+  font-family: "COCOGOOSE", sans-serif;
+  font-weight: 400;
   color: #7b0a65;
   margin: 0 2rem;
 }
@@ -85,6 +97,215 @@ nav > button > img {
 }
 .big.active {
   right: 0;
+}
+/* landing */
+*/ .services > img {
+  width: 100%;
+}
+.services > h1 {
+  text-align: center;
+}
+.welcome {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 4rem;
+  border-bottom: 0.4vh solid silver;
+  background-image: url(/src/assets/home\ page.jpg);
+  background-size: cover;
+  height: 100vh;
+}
+.welcome > h1 {
+  font-family: "Permanent Marker", cursive;
+  color: #ff93e9;
+  margin-bottom: 4vh;
+  font-size: 3em;
+  animation: customAni 5s ease 0s 1 normal none;
+}
+@keyframes customAni {
+  0% {
+    animation-timing-function: ease-in;
+    opacity: 1;
+    transform: translateY(45px);
+  }
+
+  24% {
+    opacity: 1;
+  }
+
+  40% {
+    animation-timing-function: ease-in;
+    transform: translateY(24px);
+  }
+
+  65% {
+    animation-timing-function: ease-in;
+    transform: translateY(12px);
+  }
+
+  82% {
+    animation-timing-function: ease-in;
+    transform: translateY(6px);
+  }
+
+  93% {
+    animation-timing-function: ease-in;
+    transform: translateY(4px);
+  }
+
+  25%,
+  55%,
+  75%,
+  87% {
+    animation-timing-function: ease-out;
+    transform: translateY(0px);
+  }
+
+  100% {
+    animation-timing-function: ease-out;
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.welcome > h4 {
+  color: #fcbdf0;
+  font-family: "COCOGOOSE", sans-serif;
+  font-weight: 400;
+  font-size: 1.2em;
+  width: 70%;
+  animation: customAni2 5s ease 0s 1 normal none;
+}
+@keyframes customAni2 {
+  0% {
+    animation-timing-function: ease-in;
+    opacity: 1;
+    transform: translateY(-45px);
+  }
+
+  24% {
+    opacity: 1;
+  }
+
+  40% {
+    animation-timing-function: ease-in;
+    transform: translateY(-24px);
+  }
+
+  65% {
+    animation-timing-function: ease-in;
+    transform: translateY(-12px);
+  }
+
+  82% {
+    animation-timing-function: ease-in;
+    transform: translateY(-6px);
+  }
+
+  93% {
+    animation-timing-function: ease-in;
+    transform: translateY(-4px);
+  }
+
+  25%,
+  55%,
+  75%,
+  87% {
+    animation-timing-function: ease-out;
+    transform: translateY(0px);
+  }
+
+  100% {
+    animation-timing-function: ease-out;
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.welcome-btn {
+  background: transparent;
+  border: 0.4vh solid #fcbdf0;
+  font-family: "COCOGOOSE", sans-serif;
+  font-size: 1.3em;
+  margin-top: 5vh;
+  color: #fcbdf0;
+  font-weight: 800;
+  padding: 0.5rem 1.3rem;
+  transition: all;
+  transition-duration: 0.6s;
+}
+.welcome-btn:hover {
+  background-color: #f026c8;
+  color: aliceblue;
+  border: 0.4vh solid #f026c8;
+}
+.services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 0.4vh solid silver;
+}
+.services > h1 {
+  font-family: "Permanent Marker", cursive;
+  color: #7b0a65;
+  padding: 4rem 4rem 0;
+}
+.audio {
+  text-align: left;
+  padding: 2rem 0;
+  border-bottom: 0.4vh solid silver;
+}
+.audio > h1 {
+  font-family: "Permanent Marker", cursive;
+  color: #7b0a65;
+}
+.audio > h3 {
+  font-family: "Ubuntu", sans-serif;
+  color: grey;
+}
+.upcoming-parent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  flex-direction: column;
+  align-content: center;
+  padding: 4rem;
+  border-bottom: 0.4vh solid silver;
+}
+.upcoming-programs {
+  width: 90%;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-gap: 1rem;
+}
+.upcoming-parent > h1 {
+  font-family: "Permanent Marker", cursive;
+  color: #7b0a65;
+  text-align: left;
+}
+.program-card {
+  background-color: white;
+  /* width: 100%; */
+  padding: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.program-card > h5 {
+  font-family: "Montserrat", sans-serif;
+  color: #7b0a65;
+  font-size: 1.3rem;
+}
+.program-card > h4 {
+  font-family: "Audiowide", sans-serif;
+  color: #7b0a65;
+}
+.program-card > img {
+  width: 100%;
+  /* height: 40vh; */
+  margin: 1vh 0;
 }
 /* media query */
 @media screen and (max-width: 860px) {
