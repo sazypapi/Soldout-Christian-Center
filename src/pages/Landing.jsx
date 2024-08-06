@@ -6,21 +6,39 @@ import programs from "../programs";
 const Landing = () => {
   return (
     <>
-      <div className="welcome">
-        <h1>WELCOME TO SOLDOUT CHRISTIAN CENTER</h1>
-        <h4>
-          Soldout Christian Center is a Bible-based church located in Satellite
-          Town, Lagos. Founded in May 2018, we are dedicated to preaching and
-          living by the Word of God and nothing but the Word. The responsibility
-          of discipling our congregation has been entrusted by the Lord to Pastors Lawrence
-          and Grace Nnatu.
-        </h4>
-        <Link to="/about">
-          <button className="welcome-btn">GET TO KNOW US</button>
-        </Link>
+      <div className="welcome-container">
+        <div className="welcome">
+          <h1>WELCOME TO SOLDOUT CHRISTIAN CENTER</h1>
+        </div>
+        <div className="welcome-text">
+          <h4>
+            Soldout Christian Center is a Bible-based church located in
+            Satellite Town, Lagos. Founded in May 2018, we are dedicated to
+            preaching and living by the Word of God and nothing but the Word.
+            The responsibility of discipling our congregation has been entrusted
+            by the Lord to Pastors Lawrence and Grace Nnatu.
+          </h4>
+          <Link to="/about">
+            <button className="welcome-btn">GET TO KNOW US</button>
+          </Link>
+        </div>
       </div>
       <div className="services">
         <h1>OUR SERVICES</h1>
+        <div className="servicetime">
+          <div className="servicecell">
+            <h2>Tuesday</h2>
+            <h2>Healing School - 5:30 PM</h2>
+          </div>
+          <div className="servicecell">
+            <h2>Thurday</h2>
+            <h2>Faith Clinic - 8:00 AM</h2>
+          </div>
+          <div className="servicecell">
+            <h2>Sunday</h2>
+            <h2>Sunday Service - 8:30 AM</h2>
+          </div>
+        </div>
       </div>
       <div className="audio">
         <h1>LISTEN TO OUR AUDIO PODCASTS</h1>
