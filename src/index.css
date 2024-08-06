@@ -331,6 +331,9 @@ nav > button > img {
   .welcome-container {
     background-image: url(/src/assets/homepage-mobile.png);
   }
+  .welcome{
+    height: 80vh;
+  }
 }
 @media screen and (max-width: 620px) {
   nav > button > img {
