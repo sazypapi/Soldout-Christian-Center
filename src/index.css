@@ -113,7 +113,7 @@ nav > button > img {
   text-align: center;
   padding: 4rem;
   border-bottom: 0.4vh solid silver;
-  background-image: url(/src/assets/home\ page.jpg);
+  background-image: url(/src/assets/homepage.jpg);
   background-size: cover;
   height: 100vh;
 }
