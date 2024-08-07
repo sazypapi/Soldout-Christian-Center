@@ -497,9 +497,12 @@ nav > button > img {
     font-size: 2em;
   }
 
-  .service-cell > h1,
+  .service > h1,
   .upcoming-parent > h1,
   .audio > h1 {
+    font-size: 1.5em;
+  }
+  .service-cell > h1 {
     font-size: 1.2em;
   }
   .audio > h3 {
