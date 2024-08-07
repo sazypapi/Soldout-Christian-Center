@@ -15,6 +15,10 @@
   margin: 0;
   box-sizing: border-box;
 }
+html {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  scroll-behavior: smooth;
+}
 body {
   background-color: #191616;
   /* background-image: linear-gradient(to top left, #f0f8ff, rgb(234, 234, 234)); */
