@@ -500,9 +500,9 @@ nav > button > img {
   .service-cell > h1,
   .upcoming-parent > h1,
   .audio > h1 {
-    font-size: 1em;
+    font-size: 1.2em;
   }
-  .audio>h3{
+  .audio > h3 {
     font-size: 0.8em;
   }
 }
