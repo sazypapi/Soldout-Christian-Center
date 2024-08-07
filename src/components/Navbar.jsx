@@ -2,9 +2,17 @@ import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import logo from "../assets/logo.png";
 import menuicon from "../assets/menu.png";
+import x from "../assets/x.png";
+
+import {
+  clearAllBodyScrollLocks,
+  disableBodyScroll,
+  enableBodyScroll,
+} from "body-scroll-lock-upgrade";
 
 const Navbar = () => {
   const [menu, setMenu] = useState(false);
+
   return (
     <>
       <nav>
@@ -25,13 +33,25 @@ const Navbar = () => {
             Giving
           </NavLink>
         </div>
-        <button
-          onClick={() => {
-            setMenu(!menu);
-          }}
-        >
-          <img src={menuicon} alt="" />
-        </button>
+        {!menu ? (
+          <button
+            onClick={() => {
+              setMenu(!menu);
+              disableBodyScroll(document.getElementsByTagName("body"));
+            }}
+          >
+            <img src={menuicon} alt="" />
+          </button>
+        ) : (
+          <button
+            onClick={() => {
+              setMenu(!menu);
+              enableBodyScroll(document.getElementsByTagName("body"));
+            }}
+          >
+            <img src={x} alt="" />
+          </button>
+        )}
       </nav>
 
       <section className={menu ? "big active" : "big"}>
