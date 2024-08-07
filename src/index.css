@@ -31,15 +31,17 @@ body {
 /* Navbar */
 nav {
   display: flex;
+  position: fixed;
   height: 10vh;
-  /* border-bottom: 2px solid black; */
+  width: 100%;
+  z-index: 20;
   padding: 0rem 1rem;
   justify-content: space-between;
   align-items: center;
   align-content: center;
   background-color: rgb(255, 255, 255);
-  /* background-color: rgba(255, 0, 0, 0.276); */
   box-shadow: rgba(0, 0, 0, 0.126) 0px 3px 8px;
+  top: 0;
 }
 .links {
   display: flex;
@@ -117,6 +119,8 @@ nav > button > img {
   background-image: url(/src/assets/homepage.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  margin-top: 10vh;
+
 }
 .welcome {
   display: flex;
@@ -445,6 +449,7 @@ footer {
   align-content: center;
   justify-content: center;
   margin-top: 3vh;
+  padding: 1rem;
 }
 .quick-links > h3 {
   font-family: "Qualy", sans-serif;
