@@ -496,8 +496,14 @@ nav > button > img {
   .services > h1 {
     font-size: 2em;
   }
-  .service-cell > h1 {
+
+  .service-cell > h1,
+  .upcoming-parent > h1,
+  .audio > h1 {
     font-size: 1em;
+  }
+  .audio>h3{
+    font-size: 0.8em;
   }
 }
 @media screen and (max-width: 400px) {
