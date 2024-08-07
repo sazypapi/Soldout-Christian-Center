@@ -3,6 +3,7 @@ import React from "react";
 import na from "../assets/na.png";
 import { Link } from "react-router-dom";
 import programs from "../programs";
+import Footer from "../components/Footer";
 const Landing = () => {
   return (
     <>
@@ -45,6 +46,15 @@ const Landing = () => {
 
         <h3>This service isn't available currently</h3>
       </div>
+
+      <div className="audio">
+        <h1>Share you testimony </h1>
+
+        <h3>Click the button below to email your testimony to us!</h3>
+        <a href="mailto:soldoutchristiancenter2015@gmail.com">
+          <button>Share your testimony</button>
+        </a>
+      </div>
       <div className="upcoming-parent">
         <h1>UPCOMING PROGRAMS</h1>
         <div className="upcoming-programs">
@@ -62,6 +72,7 @@ const Landing = () => {
           })}
         </div>
       </div>
+      <Footer />
     </>
   );
 };
