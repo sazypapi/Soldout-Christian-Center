@@ -493,10 +493,6 @@ nav > button > img {
   }
 }
 @media screen and (max-width: 425px) {
-  .services > h1 {
-    font-size: 2em;
-  }
-
   .services > h1,
   .upcoming-parent > h1,
   .audio > h1 {
@@ -519,7 +515,5 @@ nav > button > img {
   .welcome-container {
     background-position: center;
   }
-  .services > h1 {
-    font-size: 1.4em;
-  }
+  
 }
