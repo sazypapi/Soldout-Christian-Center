@@ -70,24 +70,29 @@ nav > button > img {
 }
 .big {
   margin-top: 10vh;
-  height: 100vh;
-  width: 90%;
+  height: 90vh;
+  width: 60%;
   position: fixed;
   top: 0;
   margin-left: 10%;
-  right: -90%;
+  right: -60%;
   display: flex;
   flex-direction: column;
   padding: 1rem;
   background-color: gainsboro;
   transition: 0.5s ease;
   z-index: 1000;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: space-between;
+  align-content: space-between;
 }
 .big > div {
   display: flex;
   flex-direction: column;
-  margin-bottom: 30vh;
+  align-items: space-between;
+  align-content: space-between;
+  justify-content: space-between;
+  /* margin-bottom: 30vh; */
 }
 .phonelinks {
   font-family: "Poppins", sans-serif;
@@ -95,7 +100,7 @@ nav > button > img {
   text-decoration: none;
   color: black;
   margin-bottom: 3vh;
-  font-size: 1em;
+  font-size: 1.1em;
 }
 .big > p {
   font-family: "Lato", sans-serif;
