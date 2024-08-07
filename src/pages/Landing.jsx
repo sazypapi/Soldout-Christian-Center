@@ -25,18 +25,18 @@ const Landing = () => {
       </div>
       <div className="services">
         <h1>OUR SERVICES</h1>
-        <div className="servicetime">
-          <div className="servicecell">
-            <h2>Tuesday</h2>
-            <h2>Healing School - 5:30 PM</h2>
+        <div className="service-time">
+          <div className="service-cell">
+            <h1 id="title">Tuesday</h1>
+            <h1>Healing School - 5:30 PM</h1>
           </div>
-          <div className="servicecell">
-            <h2>Thurday</h2>
-            <h2>Faith Clinic - 8:00 AM</h2>
+          <div className="service-cell">
+            <h1 id="title">Thursday</h1>
+            <h1>Faith Clinic - 8:00 AM</h1>
           </div>
-          <div className="servicecell">
-            <h2>Sunday</h2>
-            <h2>Sunday Service - 8:30 AM</h2>
+          <div className="service-cell">
+            <h1 id="title">Sunday</h1>
+            <h1>Sunday Service - 8:30 AM</h1>
           </div>
         </div>
       </div>

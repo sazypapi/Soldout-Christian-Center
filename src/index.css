@@ -6,13 +6,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Audiowide&display=swap");
 @import url("https://fonts.cdnfonts.com/css/cocogoose");
 @import url("https://fonts.cdnfonts.com/css/caviar-dreams");
+@import url("https://fonts.cdnfonts.com/css/qualy");
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 body {
-  background-color: aliceblue;
+  background-color: rgb(25, 22, 22);
   /* background-image: linear-gradient(to top left, #f0f8ff, rgb(234, 234, 234)); */
   /* display: flex;
   flex-direction: column;
@@ -29,7 +31,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   align-content: center;
-  background-color: rgba(255, 255, 255, 0.283);
+  background-color: rgb(255, 255, 255);
   /* background-color: rgba(255, 0, 0, 0.276); */
   box-shadow: rgba(0, 0, 0, 0.126) 0px 3px 8px;
 }
@@ -100,12 +102,6 @@ nav > button > img {
   right: 0;
 }
 /* landing */
-*/ .services > img {
-  width: 100%;
-}
-.services > h1 {
-  text-align: center;
-}
 .welcome-container {
   background-image: url(/src/assets/homepage.jpg);
   background-size: cover;
@@ -184,7 +180,13 @@ nav > button > img {
   /* background-image: url(/src/assets/welcome-text.png); */
   /* background-size: cover;
   background-repeat: no-repeat; */
-  background-color: rgba(0, 0, 0, 0.388);
+  /* background-color: rgba(0, 0, 0, 0.95); */
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.308),
+    rgba(29, 29, 29, 0.596),
+    rgb(25, 22, 22)
+  );
 }
 .welcome-text > h4 {
   color: #fa89e4;
@@ -243,18 +245,77 @@ nav > button > img {
   color: aliceblue;
   border: 0.4vh solid #7b0a65;
 }
+/* services */
 .services {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border-bottom: 0.4vh solid silver;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: rgb(25, 22, 22);
+  padding: 2rem;
+  border-bottom: 0.5vh solid silver;
 }
 .services > h1 {
   font-family: "Permanent Marker", cursive;
-  color: #7b0a65;
-  padding: 4rem 4rem 0;
+  color: #e091d0;
+  padding: 1rem;
 }
+.service-time {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  width: 70%;
+}
+.service-cell {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  color: #cc77bb;
+  font-family: "Qualy", sans-serif;
+  margin: 4vh 0;
+  align-content: center;
+  align-items: center;
+}
+#title {
+  background-color: #7b0a65;
+  color: rgb(253, 240, 252);
+  padding: 0.4rem 1rem;
+  border-radius: 10px;
+  animation: customAni3 2s ease 0s infinite normal none;
+}
+/* Copy this code after the above code */
+@keyframes customAni3 {
+  0% {
+    animation-timing-function: ease-out;
+    transform: scale(1);
+    transform-origin: center center;
+  }
+
+  10% {
+    animation-timing-function: ease-in;
+    transform: scale(0.91);
+  }
+
+  17% {
+    animation-timing-function: ease-out;
+    transform: scale(0.98);
+  }
+
+  33% {
+    animation-timing-function: ease-in;
+    transform: scale(0.87);
+  }
+
+  45% {
+    animation-timing-function: ease-out;
+    transform: scale(1);
+  }
+}
+
 .audio {
   text-align: left;
   padding: 2rem 1rem;
@@ -309,6 +370,11 @@ nav > button > img {
   margin: 1vh 0;
 }
 /* media query */
+@media screen and (max-width: 900px) {
+  .service-time {
+    width: 90%;
+  }
+}
 @media screen and (max-width: 860px) {
   .nav-image {
     width: 9%;
@@ -331,8 +397,17 @@ nav > button > img {
   .welcome-container {
     background-image: url(/src/assets/homepage-mobile.png);
   }
-  .welcome{
+  .welcome {
     height: 70vh;
+  }
+  .service-cell {
+    flex-direction: column;
+  }
+  #title {
+    margin-bottom: 4vh;
+  }
+  .service-cell > h1 {
+    font-size: 1.6em;
   }
 }
 @media screen and (max-width: 620px) {
@@ -368,11 +443,19 @@ nav > button > img {
   .welcome > h1 {
     font-size: 2em;
   }
-  .welcome-text>h4{
+  .welcome-text > h4 {
     font-size: 0.8em;
   }
-  .welcome-btn{
+  .welcome-btn {
     font-size: 0.9em;
+  }
+}
+@media screen and (max-width: 425px) {
+  .services>h1{
+    font-size: 2em;
+  }
+  .service-cell>h1{
+    font-size: 1em;
   }
 }
 @media screen and (max-width: 400px) {
@@ -384,5 +467,8 @@ nav > button > img {
   }
   .welcome-container {
     background-position: center;
+  }
+  .services>h1{
+    font-size: 1.4em;
   }
 }
