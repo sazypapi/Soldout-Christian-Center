@@ -1,6 +1,6 @@
 import React from "react";
-import dedication from "../assets/dedication.jpg";
-import services from "../assets/services.png";
+
+import na from "../assets/na.png";
 import { Link } from "react-router-dom";
 import programs from "../programs";
 const Landing = () => {
@@ -42,6 +42,7 @@ const Landing = () => {
       </div>
       <div className="audio">
         <h1>LISTEN TO OUR AUDIO PODCASTS</h1>
+
         <h3>This service isn't available currently</h3>
       </div>
       <div className="upcoming-parent">
@@ -53,6 +54,9 @@ const Landing = () => {
                 <h4>{programs.date}</h4>
                 <img src={programs.imgSquare} alt="" />
                 <h5>{programs.name}</h5>
+                <Link>
+                  <button className="view-program">View Program</button>
+                </Link>
               </div>
             );
           })}
