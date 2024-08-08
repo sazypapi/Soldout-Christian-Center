@@ -1,5 +1,4 @@
-import dedication from "./assets/dedication.jpg";
-import dedicationSquare from "./assets/Dedication square.png";
+
 import campMeeting from "./assets/Camp Meeting web.png";
 import campSquare from "./assets/camp square.png";
 import praiseQuakeSquare from "./assets/praise quake square.png";

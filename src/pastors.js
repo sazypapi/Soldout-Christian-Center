@@ -1,10 +1,10 @@
-import pastorGrace from "./assets/Pastor Grace.jpg";
-import pastorLawrence from "./assets/Pastor Law.jpg";
-import pastorT from "./assets/Pastor Toyosi";
+import pastorGrace from "./assets/PastorGrace.jpg";
+import pastorLawrence from "./assets/PastorLaw.jpg";
+import pastorT from "./assets/PastorToyosi.jpg";
 const pastorsInfo = [
   {
     id: 1,
-    img: pastorGrace,
+    img: pastorLawrence,
     name: "Pastor Lawrence Nnatu",
     position: "Senior Pastor",
     startOfMinistry:
@@ -16,7 +16,7 @@ const pastorsInfo = [
   },
   {
     id: 2,
-    img: pastorLawrence,
+    img: pastorGrace,
     name: "Pastor Grace Nnatu",
     position: "Senior Pastor",
     startOfMinistry:
@@ -38,3 +38,4 @@ const pastorsInfo = [
     facebook: "none",
   },
 ];
+export default pastorsInfo;

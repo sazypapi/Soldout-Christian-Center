@@ -1,6 +1,6 @@
 import anonymous from "./assets/Anonymous.jpg";
 import evangelist from "./assets/Evangelist.jpg";
-import ministerPatience from "./assets/Minister Patience";
+import ministerPatience from "./assets/Minister Patience.jpg";
 const ministers = [
   {
     id: 1,
@@ -33,3 +33,4 @@ const ministers = [
     position: "Minister",
   },
 ];
+export default ministers;

@@ -4,6 +4,7 @@ import na from "../assets/na.png";
 import { Link } from "react-router-dom";
 import programs from "../programs";
 import Footer from "../components/Footer";
+import pastorsInfo from "../pastors";
 const Landing = () => {
   return (
     <>

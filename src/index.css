@@ -120,7 +120,6 @@ nav > button > img {
   background-size: cover;
   background-repeat: no-repeat;
   margin-top: 10vh;
-
 }
 .welcome {
   display: flex;
@@ -302,7 +301,6 @@ nav > button > img {
   border-radius: 10px;
   animation: customAni3 2s ease 0s infinite normal none;
 }
-/* Copy this code after the above code */
 @keyframes customAni3 {
   0% {
     animation-timing-function: ease-out;
@@ -500,6 +498,36 @@ footer {
 }
 .footer-footer > div > a > img {
   width: 20%;
+}
+/* about */
+.about-home {
+  margin-top: 10vh;
+  width: 100%;
+}
+.about-home > img {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  align-content: center;
+}
+.about-text > h3 {
+  font-family: "Permanent Marker", cursive;
+  color: #f821c9;
+  text-align: center;
+}
+.about-text > h1 {
+  font-family: "Permanent Marker", cursive;
+  color: #e091d0;
+  text-align: center;
+}
+.about-sub{
+  display: flex;
+  color: white;
+  flex-direction: column;
+}
+.pastors > h1 {
+  color: white;
 }
 /* media query */
 @media screen and (max-width: 970px) {

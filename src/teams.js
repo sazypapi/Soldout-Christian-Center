@@ -24,3 +24,4 @@ const teams = [
     img: media,
   },
 ];
+export default teams;
