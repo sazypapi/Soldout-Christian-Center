@@ -362,7 +362,6 @@ nav > button > img {
   /* width: 100%; */
   /* align-content: center; */
   padding: 4rem 1rem;
-  border-bottom: 0.4vh solid silver;
   background-image: url(/src/assets/upbg.png);
   background-size: cover;
   background-repeat: no-repeat;
