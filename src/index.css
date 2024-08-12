@@ -682,6 +682,9 @@ footer {
   .upcoming-programs {
     grid-template-columns: 50%;
   }
+  .program-card{
+    text-align: center;
+  }
   .program-card > h5 {
     font-size: 1em;
   }
