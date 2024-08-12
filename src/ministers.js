@@ -10,7 +10,7 @@ const ministers = [
   },
   {
     id: 2,
-    name: "Minister Patience",
+    name: "Minister Patience Ene Oto",
     img: ministerPatience,
     position: "Minister",
   },

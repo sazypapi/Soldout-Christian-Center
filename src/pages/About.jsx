@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import pastorsInfo from "../pastors";
-import aboutus from "../assets/AboutUs.png";
+import aboutus from "../assets/AboutUs.jpg";
 import ministers from "../ministers";
 import teams from "../teams";
 import Footer from "../components/Footer";
@@ -15,7 +15,7 @@ const About = () => {
         <h3>This is</h3>
         <h1>SOLDOUT CHRISTIAN CENTER</h1>
         <div className="about-sub">
-          <h4>Welcome Home</h4>
+          <h3>Welcome Home</h3>
           <p>
             Welcome to Soldout Christian Center, where love, faith, and
             community create a spiritual home for everyone. Whether you're
@@ -27,7 +27,7 @@ const About = () => {
           </p>
         </div>
         <div className="about-sub">
-          <h4>Our Mission</h4>
+          <h3>Our Mission</h3>
           <p>
             To be a home where everyone can experience God's love, grow in
             faith, and find belonging. We offer a safe, supportive space to live
@@ -35,7 +35,7 @@ const About = () => {
           </p>
         </div>
         <div className="about-sub">
-          <h4>Our Community</h4>
+          <h3>Our Community</h3>
           <p>
             Located at Plot E 132, Kehinde Eta-Oko Street, by Close 16 Bridge,
             Satellite Town Lagos, we are more than a church—we’re a family. Our
@@ -46,42 +46,50 @@ const About = () => {
           </p>
         </div>
       </div>
-      <div>Meet the Team</div>
+      <h1 className="MTT">Meet the Team</h1>
       <div className="pastors-container">
-        <h1>Pastors</h1>
-        {pastorsInfo.map((pastors) => {
-          return (
-            <div className="pastors" key={pastors.id}>
-              <img src={pastors.img} alt="" />
-              <h5>{pastors.name}</h5>
-              <Link>
-                <button>View {pastors.name}</button>
-              </Link>
-            </div>
-          );
-        })}
+        <h1>Our Pastors</h1>
+        <div className="pastors-div">
+          {pastorsInfo.map((pastors) => {
+            return (
+              <div className="pastors" key={pastors.id}>
+                <img src={pastors.img} alt="" />
+                <h5>{pastors.name}</h5>
+                <h6>{pastors.position}</h6>
+                <Link>
+                  <button className="pastors-btn">View Pastor</button>
+                </Link>
+              </div>
+            );
+          })}
+        </div>
       </div>
       <div className="ministers-container">
-        <h1>Ministers</h1>
-        {ministers.map((minister) => {
-          return (
-            <div className="ministers" key={minister.id}>
-              <img src={minister.img} alt="" />
-              <h5>{minister.name}</h5>
-            </div>
-          );
-        })}
+        <h1>Our Ministers</h1>
+        <div className="ministers-div">
+          {ministers.map((minister) => {
+            return (
+              <div className="ministers" key={minister.id}>
+                <img src={minister.img} alt={minister.name} />
+                <h5>{minister.name}</h5>
+                <h6>{minister.position}</h6>
+              </div>
+            );
+          })}
+        </div>
       </div>
       <div className="team-container">
-        <h1>Our Departments</h1>
-        {teams.map((team) => {
-          return (
-            <div className="team" key={team.id}>
-              <img src={team.img} alt="" />
-              <h5>{team.team}</h5>
-            </div>
-          );
-        })}
+        <h1>Our Teams</h1>
+        <div className="teams-div">
+          {teams.map((team) => {
+            return (
+              <div className="team" key={team.id}>
+                <img src={team.img} alt="" />
+                <h5>{team.team}</h5>
+              </div>
+            );
+          })}
+        </div>
       </div>
       <Footer />
     </>

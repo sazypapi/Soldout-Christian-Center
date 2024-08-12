@@ -5,21 +5,16 @@ import media from "./assets/media.jpg";
 const teams = [
   {
     id: 1,
-    team: "Choir ",
+    team: "SSC Choir ",
     img: choir,
   },
   {
     id: 2,
-    team: "Ministerial team ",
-    img: ministers,
-  },
-  {
-    id: 3,
     team: "Protocol team ",
     img: protocol,
   },
   {
-    id: 4,
+    id: 3,
     team: "Media team ",
     img: media,
   },
