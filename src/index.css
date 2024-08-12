@@ -383,18 +383,17 @@ nav > button > img {
   margin-bottom: 5vh;
 }
 .program-card {
-  background-color: white;
   padding: 1rem;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .program-card > h5 {
   font-family: "Kiona", sans-serif;
-  color: hsl(312, 85%, 26%);
+  color: #e091d0;
   font-size: 1.3rem;
 }
 .program-card > h4 {
   font-family: "Audiowide", sans-serif;
-  color: #7b0a65;
+  color: #e091d0;
 }
 .program-card > img {
   width: 100%;
@@ -403,16 +402,17 @@ nav > button > img {
 .view-program {
   margin-top: 1vh;
   background: none;
-  border: 0.4vh solid #7b0a65;
-  color: #7b0a65;
+  border: 0.4vh solid #f4c0e8;
+  color: #f4c0e8;
   font-family: "Audiowide", sans-serif;
   padding: 0.3rem 0.3rem 0.3rem;
   transition: all;
   transition-duration: 0.6;
 }
 .view-program:hover {
-  background-color: #7b0a65;
+  background-color: #bc209a;
   color: white;
+  border: 0.4vh solid #bc209a;
 }
 /* Footer */
 footer {
@@ -590,7 +590,7 @@ footer {
   border: 0.4vh solid #f4c0e8;
   color: #f4c0e8;
   margin-top: 1vh;
-  padding: 0.2rem 1rem;
+  padding: 0.3rem 1rem;
   transition: all;
   transition-duration: 0.5s;
   font-family: "Ubuntu", sans-serif;
@@ -710,7 +710,7 @@ footer {
   .team-container > h1 {
     font-size: 1.3em;
   }
-  .teams-div{
+  .teams-div {
     grid-template-columns: 70%;
     text-align: center;
   }
@@ -804,8 +804,8 @@ footer {
   .about-text > h3 {
     font-size: 1em;
   }
-  .teams-div{
-    grid-template-columns: 90% ;
+  .teams-div {
+    grid-template-columns: 90%;
   }
 }
 @media screen and (max-width: 425px) {
