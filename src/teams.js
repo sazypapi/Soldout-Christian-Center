@@ -5,7 +5,7 @@ import media from "./assets/media.jpg";
 const teams = [
   {
     id: 1,
-    team: "SSC Choir ",
+    team: "SCC Choir ",
     img: choir,
   },
   {

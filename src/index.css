@@ -362,7 +362,7 @@ nav > button > img {
   /* width: 100%; */
   /* align-content: center; */
   padding: 4rem 1rem;
-  background-image: url(/src/assets/upbg.png);
+  background-image: url(/src/assets/upbg.png.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -420,6 +420,7 @@ footer {
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   border-top: 0.3vh solid silver;
   margin-top: 4vh;
+
 }
 
 .footer-header {
