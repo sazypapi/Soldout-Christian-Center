@@ -65,7 +65,7 @@ const Landing = () => {
                 <h4>{programs.date}</h4>
                 <img src={programs.imgSquare} alt="" />
                 <h5>{programs.name}</h5>
-                <Link>
+                <Link to={`/program/${programs.id}`}>
                   <button className="view-program">View Program</button>
                 </Link>
               </div>

@@ -11,6 +11,8 @@ import Testimony from "./pages/Testimony";
 import UpcomingProgram from "./pages/UpcomingProgram";
 import Events from "./pages/Events";
 import Giving from "./pages/Giving";
+import Faq from "./pages/Faq";
+import Thanksgiving from "./pages/Thanksgiving";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -33,17 +35,18 @@ const router = createBrowserRouter([
         path: "newbeliever",
         element: <NewBeliever />,
       },
-      { path: "pastors:id", element: <PastorsInfo /> },
+      { path: "pastors/:id", element: <PastorsInfo /> },
       { path: "testimony", element: <Testimony /> },
       {
-        path: "upcomingprogram",
+        path: "program",
         element: <UpcomingProgram />,
       },
-      {
-        path: "events",
-        element: <Events />,
-      },
+      { path: "program/:id", element: <Events /> },
       { path: "giving", element: <Giving /> },
+      { path: "faq", element: <Faq /> },
+      { path: "testimony", element: <Testimony /> },
+      { path: "events", element: <Events /> },
+      { path: "thanksgiving", element: <Thanksgiving /> },
     ],
   },
 ]);

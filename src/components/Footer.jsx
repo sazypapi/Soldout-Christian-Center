@@ -16,17 +16,38 @@ const Footer = () => {
         <h3>Quick Links</h3>
         <div>
           <div className="sec1">
-            <Link className="seclink">Home</Link>
-            <Link className="seclink">About</Link>
-            <Link className="seclink">Contact us</Link>
-            <Link className="seclink">Giving</Link>
-            <Link className="seclink">Events</Link>
+            <Link to="/" className="seclink">
+              Home
+            </Link>
+            <Link to="/about" className="seclink">
+              About
+            </Link>
+            <Link to="/contact" className="seclink">
+              Contact us
+            </Link>
+            <Link to="/giving" className="seclink">
+              Giving
+            </Link>
+            <Link to="/program" className="seclink">
+              Programs
+            </Link>
           </div>
           <div className="sec2">
-            <Link className="seclink">Location</Link>
-            <Link className="seclink">FAQ</Link>
-            <Link className="seclink">Testimony</Link>
-            <Link className="seclink">Thanksgiving</Link>
+            <Link to="/location" className="seclink">
+              Location
+            </Link>
+            <Link to="faq" className="seclink">
+              FAQ
+            </Link>
+            <Link to="testimony" className="seclink">
+              Testimony
+            </Link>
+            <Link to="thanksgiving" className="seclink">
+              Thanksgiving
+            </Link>
+            <Link to="newbeliever" className="seclink">
+              New believers
+            </Link>
           </div>
         </div>
       </div>

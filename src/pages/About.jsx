@@ -56,7 +56,7 @@ const About = () => {
                 <img src={pastors.img} alt="" />
                 <h5>{pastors.name}</h5>
                 <h6>{pastors.position}</h6>
-                <Link>
+                <Link to={`/pastors/${pastors.id}`}>
                   <button className="pastors-btn">View Pastor</button>
                 </Link>
               </div>
