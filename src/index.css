@@ -420,7 +420,6 @@ footer {
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   border-top: 0.3vh solid silver;
   margin-top: 4vh;
-
 }
 
 .footer-header {
@@ -497,6 +496,7 @@ footer {
 .footer-footer > div > a > img {
   width: 20%;
 }
+lato
 /* about */
 .about-home {
   margin-top: 10vh;
@@ -635,28 +635,57 @@ footer {
   margin-top: 10vh;
   color: white;
   background-image: url(/src/assets/contactus.jpg);
-  height: 60vh;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   align-items: center;
-  align-content: center;
+  align-content: space-around;
   justify-content: center;
 }
 .contact-us > h1 {
   font-family: "Permanent Marker", cursive;
   color: #e091d0;
   text-align: center;
-  font-size: 2.5em;
+  font-size: 2em;
+  margin: 10vh 0;
 }
 .contact-us > h4 {
-  color: #fa89e4;
-  font-family: "COCOGOOSE", sans-serif;
-  font-size: 1em;
-  width:90%;
+  color: #dfa5d4;
+  font-family: "Lato", sans-serif;
+  font-size: 0.9em;
+  width: 90%;
   text-align: justify;
+}
+.contact-h3 {
+  color: #f4c0e8;
+  font-size: 1.5em;
+  text-align: center;
+  font-family: "Lemon/Milk", sans-serif;
+  margin: 10vh 0;
+}
+.ccc {
+  display: grid;
+  grid-template-columns: 40% 40%;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  grid-gap: 4rem 2rem;
+}
+a {
+  text-decoration: none;
+}
+.contact-card > h4 {
+  font-family: "Qualy", sans-serif;
+  color: #cbc9c9;
+  font-size: 0.9em;
+}
+.contact-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 /* media query */
 @media screen and (max-width: 970px) {
@@ -684,15 +713,21 @@ footer {
   }
   nav > button {
     display: inline-block;
-    width: 13%;
+    width: 10%;
   }
   nav > button > img {
-    width: 50%;
+    width: 40%;
   }
   .nav-image {
-    width: 14%;
+    width: 12%;
   }
- 
+  .contact-us > h1 {
+    font-size: 2em;
+  }
+  .contact-us > h4 {
+    font-size: 0.8em;
+  }
+
   .welcome {
     height: 70vh;
   }
@@ -750,13 +785,19 @@ footer {
   .ministers > h5 {
     font-size: 0.9em;
   }
+  .contact-us > h1 {
+    font-size: 1.8em;
+  }
 }
 @media screen and (max-width: 620px) {
+  .contact-us>h1{
+    font-size: 1.6em;
+  }
   nav > button > img {
     width: 55%;
   }
   .nav-image {
-    width: 18%;
+    width: 15%;
   }
   .welcome-text > h4 {
     font-size: 1em;
@@ -764,7 +805,8 @@ footer {
   .welcome-btn {
     font-size: 1em;
   }
-  .welcome > h1 {
+  .welcome > h1,
+  .contact-us > h1 {
     font-size: 2.5em;
   }
   .welcome-text > h4 {
@@ -803,10 +845,10 @@ footer {
     width: 55%;
   }
   nav > button {
-    width: 17%;
+    width: 13%;
   }
   .nav-image {
-    width: 23%;
+    width: 19%;
   }
   .welcome > h1 {
     font-size: 2em;
@@ -836,6 +878,12 @@ footer {
   .teams-div {
     grid-template-columns: 90%;
   }
+  .ccc {
+    grid-template-columns: 70%;
+  }
+  .contact-us>h1{
+    font-size: 1.9em;
+  }
 }
 @media screen and (max-width: 425px) {
   .services > h1,
@@ -864,10 +912,10 @@ footer {
 }
 @media screen and (max-width: 400px) {
   nav > button {
-    width: 18%;
+    width: 17%;
   }
   .nav-image {
-    width: 30%;
+    width: 25%;
   }
   .welcome-container {
     background-position: center;
