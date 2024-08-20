@@ -10,6 +10,27 @@
 @import url("https://fonts.cdnfonts.com/css/kiona-2");
 @import url("https://fonts.cdnfonts.com/css/unbounded");
 @import url("https://fonts.cdnfonts.com/css/lemonmilk");
+/* When entering, start from opacity 0 */
+.fade-enter {
+  opacity: 0;
+}
+
+/* Transition to opacity 1 */
+.fade-enter-active {
+  opacity: 1;
+  transition: opacity 2000ms ease-in-out;
+}
+
+/* When exiting, start from opacity 1 */
+.fade-exit {
+  opacity: 1;
+}
+
+/* Transition to opacity 0 */
+.fade-exit-active {
+  opacity: 0;
+  transition: opacity 2000ms ease-in-out;
+}
 
 * {
   padding: 0;
@@ -46,8 +67,8 @@ nav {
 }
 .navlink {
   text-decoration: none;
-  font-family: "COCOGOOSE", sans-serif;
-  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
   color: #7b0a65;
   margin: 0 2rem;
 }
@@ -496,7 +517,7 @@ footer {
 .footer-footer > div > a > img {
   width: 20%;
 }
-lato
+
 /* about */
 .about-home {
   margin-top: 10vh;
@@ -575,6 +596,7 @@ lato
 
 .pastors > img {
   width: 100%;
+  clip-path: circle(61% at 37% 49%);
 }
 .pastors > h5 {
   color: #e091d0;
@@ -642,6 +664,7 @@ lato
   flex-direction: column;
   align-items: center;
   align-content: space-around;
+  height: 100vh;
   justify-content: center;
 }
 .contact-us > h1 {
@@ -686,6 +709,15 @@ a {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+/* program  */
+.program-container {
+  margin-top: 14vh;
+}
+/* pastors-info */
+.pastors-info {
+  color: purple;
+  margin-top: 10vh;
 }
 /* media query */
 @media screen and (max-width: 970px) {
@@ -790,7 +822,7 @@ a {
   }
 }
 @media screen and (max-width: 620px) {
-  .contact-us>h1{
+  .contact-us > h1 {
     font-size: 1.6em;
   }
   nav > button > img {
@@ -881,7 +913,7 @@ a {
   .ccc {
     grid-template-columns: 70%;
   }
-  .contact-us>h1{
+  .contact-us > h1 {
     font-size: 1.9em;
   }
 }

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import logo from "../assets/logo.png";
 import menuicon from "../assets/menu.png";
 import x from "../assets/x.png";
@@ -13,6 +13,13 @@ import {
 const Navbar = () => {
   const [menu, setMenu] = useState(false);
 
+  const handleMenuToggle = () => {
+    setMenu((prevState) => !prevState);
+  };
+
+  const handleLinkClick = () => {
+    setMenu(false);
+  };
   return (
     <>
       <nav>
@@ -26,10 +33,10 @@ const Navbar = () => {
           <NavLink to="/contact" className="navlink">
             Contact us
           </NavLink>
-          <NavLink to="/events" className="navlink">
+          <NavLink to="/program" className="navlink">
             Programs
           </NavLink>
-          <NavLink to="./giving" className="navlink">
+          <NavLink to="/giving" className="navlink">
             Giving
           </NavLink>
         </div>
@@ -38,6 +45,7 @@ const Navbar = () => {
             onClick={() => {
               setMenu(!menu);
               disableBodyScroll(document.getElementsByTagName("body"));
+              handleMenuToggle;
             }}
           >
             <img src={menuicon} alt="" />
@@ -47,25 +55,37 @@ const Navbar = () => {
             onClick={() => {
               setMenu(!menu);
               enableBodyScroll(document.getElementsByTagName("body"));
+              handleMenuToggle;
             }}
           >
             <img src={x} alt="" />
           </button>
         )}
       </nav>
-
       <section className={menu ? "big active" : "big"}>
         <div>
-          <NavLink to="/about" className="phonelinks">
+          <NavLink to="/about" className="phonelinks" onClick={handleLinkClick}>
             About
           </NavLink>
-          <NavLink to="/contact" className="phonelinks">
+          <NavLink
+            to="/contact"
+            className="phonelinks"
+            onClick={handleLinkClick}
+          >
             Contact us
           </NavLink>
-          <NavLink to="/events" className="phonelinks">
+          <NavLink
+            to="/program"
+            className="phonelinks"
+            onClick={handleLinkClick}
+          >
             Programs
           </NavLink>
-          <NavLink to="/giving" className="phonelinks">
+          <NavLink
+            to="/giving"
+            className="phonelinks"
+            onClick={handleLinkClick}
+          >
             Giving
           </NavLink>
         </div>

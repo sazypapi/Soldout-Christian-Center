@@ -8,11 +8,11 @@ import Location from "./pages/Location";
 import NewBeliever from "./pages/NewBeliever";
 import PastorsInfo from "./pages/PastorsInfo";
 import Testimony from "./pages/Testimony";
-import UpcomingProgram from "./pages/UpcomingProgram";
 import Events from "./pages/Events";
 import Giving from "./pages/Giving";
 import Faq from "./pages/Faq";
 import Thanksgiving from "./pages/Thanksgiving";
+import Programs from "./pages/Programs";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -39,13 +39,12 @@ const router = createBrowserRouter([
       { path: "testimony", element: <Testimony /> },
       {
         path: "program",
-        element: <UpcomingProgram />,
+        element: <Programs />,
       },
       { path: "program/:id", element: <Events /> },
       { path: "giving", element: <Giving /> },
       { path: "faq", element: <Faq /> },
       { path: "testimony", element: <Testimony /> },
-      { path: "events", element: <Events /> },
       { path: "thanksgiving", element: <Thanksgiving /> },
     ],
   },
