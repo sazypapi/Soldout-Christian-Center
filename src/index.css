@@ -967,4 +967,7 @@ a {
   .footer-footer > h5 {
     font-size: 0.7em;
   }
+  .nav-image{
+    width: 27%;
+  }
 }
