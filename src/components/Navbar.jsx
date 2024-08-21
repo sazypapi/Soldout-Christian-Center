@@ -13,17 +13,17 @@ import {
 const Navbar = () => {
   const [menu, setMenu] = useState(false);
 
-  const handleMenuToggle = () => {
-    setMenu((prevState) => !prevState);
-  };
-
-  const handleLinkClick = () => {
-    setMenu(false);
-  };
   return (
     <>
       <nav>
-        <NavLink to="/" className="nav-image">
+        <NavLink
+          to="/"
+          className="nav-image"
+          onClick={() => {
+            setMenu(false);
+            enableBodyScroll(document.getElementsByTagName("body"));
+          }}
+        >
           <img src={logo} alt="" />
         </NavLink>
         <div className="links">
@@ -45,7 +45,6 @@ const Navbar = () => {
             onClick={() => {
               setMenu(!menu);
               disableBodyScroll(document.getElementsByTagName("body"));
-              handleMenuToggle;
             }}
           >
             <img src={menuicon} alt="" />
@@ -55,7 +54,6 @@ const Navbar = () => {
             onClick={() => {
               setMenu(!menu);
               enableBodyScroll(document.getElementsByTagName("body"));
-              handleMenuToggle;
             }}
           >
             <img src={x} alt="" />
@@ -64,27 +62,43 @@ const Navbar = () => {
       </nav>
       <section className={menu ? "big active" : "big"}>
         <div>
-          <NavLink to="/about" className="phonelinks" onClick={handleLinkClick}>
+          <NavLink
+            to="/about"
+            className="phonelinks"
+            onClick={() => {
+              setMenu(!menu);
+              enableBodyScroll(document.getElementsByTagName("body"));
+            }}
+          >
             About
           </NavLink>
           <NavLink
             to="/contact"
             className="phonelinks"
-            onClick={handleLinkClick}
+            onClick={() => {
+              setMenu(!menu);
+              enableBodyScroll(document.getElementsByTagName("body"));
+            }}
           >
             Contact us
           </NavLink>
           <NavLink
             to="/program"
             className="phonelinks"
-            onClick={handleLinkClick}
+            onClick={() => {
+              setMenu(!menu);
+              enableBodyScroll(document.getElementsByTagName("body"));
+            }}
           >
             Programs
           </NavLink>
           <NavLink
             to="/giving"
             className="phonelinks"
-            onClick={handleLinkClick}
+            onClick={() => {
+              setMenu(!menu);
+              enableBodyScroll(document.getElementsByTagName("body"));
+            }}
           >
             Giving
           </NavLink>

@@ -7,7 +7,7 @@ const HomeLayout = () => {
   return (
     <>
       <Navbar />
-      <ScrollToTop />
+      {/* <ScrollToTop /> */}
 
       <Outlet />
     </>
