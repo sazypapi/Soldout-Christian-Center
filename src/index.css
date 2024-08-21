@@ -49,7 +49,7 @@ body {
 nav {
   display: flex;
   position: fixed;
-  height: 10vh;
+  height: 9vh;
   width: 100%;
   z-index: 20;
   padding: 0rem 1rem;
@@ -88,8 +88,8 @@ nav > button > img {
   width: 30%;
 }
 .big {
-  margin-top: 10vh;
-  height: 80vh;
+  margin-top: 9vh;
+  height: 91vh;
   width: 60%;
   position: fixed;
   top: 0;
@@ -136,7 +136,7 @@ nav > button > img {
   background-image: url(/src/assets/homepage.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  margin-top: 10vh;
+  margin-top: 9vh;
 }
 .welcome {
   height: 100vh;
@@ -520,7 +520,7 @@ footer {
 
 /* about */
 .about-home {
-  margin-top: 10vh;
+  margin-top: 9vh;
   width: 100%;
 }
 .about-home > img {
@@ -654,7 +654,7 @@ footer {
 }
 /* Contact */
 .contact-us {
-  margin-top: 10vh;
+  margin-top: 9vh;
   color: white;
   background-image: url(/src/assets/contactus.jpg);
   background-size: cover;
@@ -712,7 +712,7 @@ a {
 }
 /* program  */
 .program-container {
-  margin-top: 14vh;
+  margin-top: 13vh;
 }
 /* pastors-info */
 .pastors-info {
