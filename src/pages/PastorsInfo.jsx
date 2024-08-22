@@ -14,52 +14,57 @@ const PastorsInfo = () => {
   return (
     <>
       <div className="pastors-info">
-        <div className="pastor-details">
+        <div className="pastor-detail">
           {findPastor ? (
-            <div className="pastor-details" key={findPastor.id}>
-              <img src={findPastor.img} alt="" />
-              <div className="pastor-text">
-                <div className="pastor-short-text">
-                  <section>
-                    <p>name</p>
-                    <h4>{findPastor.name}</h4>
-                  </section>
-                  <section className="pst-right">
-                    <p>position</p>
-                    <h4>{findPastor.position}</h4>
-                  </section>
-                </div>
-                <div className="pastor-short-text">
-                  <section>
-                    <p>nationality</p>
-                    <h4>{findPastor.Nationality}</h4>
-                  </section>
-                  <section className="pst-right">
-                    <p>state of origin</p>
-                    <h4>{findPastor.stateOfOrigin}</h4>
-                  </section>
-                </div>
-                <div className="pastor-long-text">
-                  <p>Autobiography</p>
-                  <h4>{findPastor.startOfMinistry}</h4>
-                </div>
-                <div className="social-media">
-                  <p>social Media</p>
-                  <div>
-                    <a href={findPastor.facebook}>
-                      <img src={facebook} alt="" />
-                    </a>
-                    {findPastor.instagram ? (
-                      <a href={findPastor.instagram}>
-                        <img src={ig} alt="" />
-                      </a>
-                    ) : (
-                      <div></div>
-                    )}
+            // image
+            <>
+              <div className="pastor-details" key={findPastor.id}>
+                <img src={findPastor.img} alt="" />
+                {/* short text */}
+                <div className="pastor-text">
+                  <div className="pastor-short-text">
+                    <section>
+                      <p>name</p>
+                      <h4>{findPastor.name}</h4>
+                    </section>
+                    <section className="pst-right">
+                      <p>position</p>
+                      <h4>{findPastor.position}</h4>
+                    </section>
+                  </div>
+                  <div className="pastor-short-text">
+                    <section>
+                      <p>nationality</p>
+                      <h4>{findPastor.Nationality}</h4>
+                    </section>
+                    <section className="pst-right">
+                      <p>state of origin</p>
+                      <h4>{findPastor.stateOfOrigin}</h4>
+                    </section>
                   </div>
                 </div>
               </div>
-            </div>
+              {/* long text */}
+              <div className="pastor-long-text">
+                <p>ministerial journey</p>
+                <h4>{findPastor.startOfMinistry}</h4>
+              </div>
+              <div className="social-media">
+                <p>social Media</p>
+                <div>
+                  <a href={findPastor.facebook}>
+                    <img src={facebook} alt="" />
+                  </a>
+                  {findPastor.instagram ? (
+                    <a href={findPastor.instagram}>
+                      <img src={ig} alt="" />
+                    </a>
+                  ) : (
+                    <div></div>
+                  )}
+                </div>
+              </div>
+            </>
           ) : (
             <h1>Pastor not found</h1>
           )}

@@ -49,7 +49,7 @@ body {
 nav {
   display: flex;
   position: fixed;
-  height: 9vh;
+  height: 10vh;
   width: 100%;
   z-index: 20;
   padding: 0rem 1rem;
@@ -88,8 +88,8 @@ nav > button > img {
   width: 30%;
 }
 .big {
-  margin-top: 9vh;
-  height: 91vh;
+  margin-top: 10vh;
+  height: 90vh;
   width: 60%;
   position: fixed;
   top: 0;
@@ -136,7 +136,7 @@ nav > button > img {
   background-image: url(/src/assets/homepage.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  margin-top: 9vh;
+  margin-top: 10vh;
 }
 .welcome {
   height: 100vh;
@@ -520,7 +520,7 @@ footer {
 
 /* about */
 .about-home {
-  margin-top: 9vh;
+  margin-top: 10vh;
   width: 100%;
 }
 .about-home > img {
@@ -654,7 +654,7 @@ footer {
 }
 /* Contact */
 .contact-us {
-  margin-top: 9vh;
+  margin-top: 10vh;
   color: white;
   background-image: url(/src/assets/contactus.jpg);
   background-size: cover;
@@ -717,7 +717,12 @@ a {
 /* pastors-info */
 .pastors-info {
   color: white;
-  margin-top: 9vh;
+  margin-top: 10vh;
+}
+.pastor-text {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 .pastor-details {
   display: flex;
@@ -725,6 +730,7 @@ a {
   justify-content: center;
   align-items: center;
   align-content: center;
+  width: 100%;
 }
 .pastor-details > img {
   width: 100%;
@@ -735,6 +741,7 @@ a {
   justify-content: space-between;
   margin-bottom: 3vh;
   margin-top: 2vh;
+  width: 100%;
 }
 .pst-right {
   text-align: right;
@@ -745,14 +752,19 @@ a {
 }
 .pastor-short-text > section > p,
 .pastor-long-text > p,
-.social-media > p {
+.social-media > p,
+.event-short-text > section > p,
+.event-long-text > p {
   font-size: 0.7em;
   color: rgb(201, 199, 199);
   font-family: "Ubuntu", sans-serif;
   margin-bottom: 1vh;
 }
-.pastor-short-text > section > h4 {
+.pastor-short-text > section > h4,
+.event-short-text > section > h4,
+.event-long-text > h4 {
   font-family: "Lato", sans-serif;
+  color: white;
 }
 .pastor-long-text {
   display: flex;
@@ -764,14 +776,45 @@ a {
 }
 .social-media {
   margin-top: 3vh;
+  width: 100%;
 }
 .social-media > div {
   display: flex;
-  justify-content: space-around;
   width: 20%;
+  align-items: flex-start;
+  align-content: flex-start;
 }
 .social-media > div > a > img {
-  width: 90%;
+  width: 80%;
+}
+/* event */
+.event-info {
+  margin-top: 10vh;
+}
+.event-img > img {
+  width: 100%;
+}
+.event-img > h3 {
+  color: white;
+  font-family: "Lato", sans-serif;
+}
+.event-short-text {
+  display: flex;
+  color: white;
+  justify-content: space-between;
+  margin-top: 4vh;
+}
+.event-long-text {
+  margin-top: 4vh;
+}
+.event-info > h5 {
+  color: white;
+  margin-top: 5vh;
+  font-family: "Qualy", sans-serif;
+}
+.contact-link {
+  color: lightskyblue;
+  text-decoration: underline;
 }
 /* media query */
 @media screen and (max-width: 970px) {
@@ -1026,12 +1069,50 @@ a {
   }
 }
 @media screen and (min-width: 500px) {
-  .pastor-details>img{
-
-    width: 80%;
+  .pastor-short-text > section > p,
+  .pastor-long-text > p,
+  .social-media > p {
+    font-size: 0.9em;
   }
-  .pastor-details{
-    justify-content: flex-start;
-    align-items: flex-start;
+
+  .pastor-long-text > h4,
+  .pastor-short-text > section > h4 {
+    font-size: 1.2em;
+  }
+}
+@media screen and (min-width: 768px) {
+  .pastor-details {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .pastor-details > img {
+    width: 40%;
+  }
+  .pastor-text {
+    width: 50%;
+  }
+  .pastor-long-text {
+    margin-top: 4vh;
+  }
+  .pastor-short-text {
+    padding: 0 1rem;
+  }
+  .event-info{
+    padding: 1rem;
+  }
+  .event-details{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .event-img{
+    flex: 50%;
+  }
+  .event-short-text{
+    flex: 40%;
+  }
+  
+  .event-img>img{
+    width: 100%;
   }
 }

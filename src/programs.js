@@ -1,4 +1,3 @@
-
 import campMeeting from "./assets/Camp Meeting web.png";
 import campSquare from "./assets/camp square.png";
 import praiseQuakeSquare from "./assets/praise quake square.png";
