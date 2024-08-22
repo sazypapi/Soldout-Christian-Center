@@ -749,6 +749,7 @@ a {
   font-size: 0.7em;
   color: rgb(201, 199, 199);
   font-family: "Ubuntu", sans-serif;
+  margin-bottom: 1vh;
 }
 .pastor-short-text > section > h4 {
   font-family: "Lato", sans-serif;
@@ -761,15 +762,15 @@ a {
   font-family: "Lato", sans-serif;
   font-size: 1em;
 }
-.social-media{
+.social-media {
   margin-top: 3vh;
 }
-.social-media>div{
+.social-media > div {
   display: flex;
   justify-content: space-around;
   width: 20%;
 }
-.social-media>div>a>img{
+.social-media > div > a > img {
   width: 90%;
 }
 /* media query */
@@ -1022,5 +1023,15 @@ a {
   }
   .nav-image {
     width: 27%;
+  }
+}
+@media screen and (min-width: 500px) {
+  .pastor-details>img{
+
+    width: 80%;
+  }
+  .pastor-details{
+    justify-content: flex-start;
+    align-items: flex-start;
   }
 }
