@@ -988,19 +988,11 @@ a {
   background-size: cover;
   background-repeat: no-repeat;
 }
-.testimony-head {
-  height: 40vh;
-  /* display: flex; */
-  justify-content: center;
-  align-items: center;
-  border: 1px solid red;
-  align-content: center;
-  flex-direction: column;
-}
+
 /* newbeliever */
 .newbeliever {
   margin-top: 10vh;
-  background-image: url(/src/assets/new\ believer.jpg);
+  background-image: url(/src/assets/newbeliever.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
