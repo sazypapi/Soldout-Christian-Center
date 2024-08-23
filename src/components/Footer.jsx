@@ -36,16 +36,16 @@ const Footer = () => {
             <Link to="/location" className="seclink">
               Location
             </Link>
-            <Link to="faq" className="seclink">
+            <Link to="/faq" className="seclink">
               FAQ
             </Link>
-            <Link to="testimony" className="seclink">
+            <Link to="/testimony" className="seclink">
               Testimony
             </Link>
-            <Link to="thanksgiving" className="seclink">
+            <Link to="/thanksgiving" className="seclink">
               Thanksgiving
             </Link>
-            <Link to="newbeliever" className="seclink">
+            <Link to="/newbeliever" className="seclink">
               New believers
             </Link>
           </div>
