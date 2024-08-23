@@ -33,9 +33,9 @@ const Footer = () => {
             </Link>
           </div>
           <div className="sec2">
-            <Link to="/location" className="seclink">
+            {/* <Link to="/location" className="seclink">
               Location
-            </Link>
+            </Link> */}
             <Link to="/faq" className="seclink">
               FAQ
             </Link>
