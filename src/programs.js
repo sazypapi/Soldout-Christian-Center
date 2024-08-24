@@ -9,7 +9,7 @@ const programs = [
     name: "Annual Camp Meeting",
     date: "August 25th - 28th, 2024",
     description:
-      "Soldout Christian Center's annual Camp meeting is around the corner and you do not want to miss it!! for more information, go to the contacts page and contact the church in any way that's most convenient for you.",
+      "Soldout Christian Center's annual Camp meeting is around the corner and you do not want to miss it!! For more information, go to the contacts page and contact the church in any way that's most convenient for you.",
     img: campMeeting,
     location: "Redemption Camp",
     imgSquare: campSquare,
@@ -19,7 +19,7 @@ const programs = [
     name: "Praise Quake",
     date: "October 6th, 2024",
     description:
-      "Praise Quake is our annual praise program that has had ministers like Frank Edwards, Victoria Orenze,Buchi, Preye Odede, Uche Unlimited and many more grace her stage. The program's main aim is to capture souls for God.",
+      "Praise Quake is our annual praise program that has had ministers like Frank Edwards, Victoria Orenze,Buchi, Preye Odede, Uche Unlimited and many more grace her stage. The program's main aim is to capture souls for God through truthful and soulful worship.",
     img: praiseQuake,
     location: "TBD",
     imgSquare: praiseQuakeSquare,
