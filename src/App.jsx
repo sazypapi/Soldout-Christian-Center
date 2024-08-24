@@ -13,6 +13,8 @@ import Giving from "./pages/Giving";
 import Faq from "./pages/Faq";
 import Thanksgiving from "./pages/Thanksgiving";
 import Programs from "./pages/Programs";
+import { Provider, useSelector } from "react-redux";
+import { store } from "./store";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -50,9 +52,12 @@ const router = createBrowserRouter([
   },
 ]);
 function App() {
+
   return (
     <>
-      <RouterProvider router={router} />
+      <Provider store={store}>
+        <RouterProvider router={router} />
+      </Provider>
     </>
   );
 }

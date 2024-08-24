@@ -2,13 +2,26 @@ import React from "react";
 import { Link, useParams } from "react-router-dom";
 import programs from "../programs";
 import Footer from "../components/Footer";
-
+import { useSelector } from "react-redux";
+import {
+  clearAllBodyScrollLocks,
+  disableBodyScroll,
+  enableBodyScroll,
+} from "body-scroll-lock-upgrade";
 const Events = () => {
   const params = useParams();
   const currentProgram = params.id;
   console.log(currentProgram);
   const findProgram = programs.find((program) => program.id == currentProgram);
   console.log(findProgram);
+  const { modalState } = useSelector((store) => store.modal);
+  if (modalState) {
+    disableBodyScroll(document.getElementsByTagName("body"));
+  } else {
+    enableBodyScroll(document.getElementsByTagName("body"));
+  }
+  console.log(modalState);
+
   return (
     <>
       <div className="event-info">
@@ -16,7 +29,7 @@ const Events = () => {
           <>
             <div className="event-details" key={findProgram.id}>
               <div className="event-img">
-                <img src={findProgram.img} alt="" />
+                <img src={findProgram.imgSquare} alt="" />
                 <h3>{findProgram.name}</h3>
               </div>
               <div className="event-short-text">
@@ -39,7 +52,10 @@ const Events = () => {
           <h1>Program is not available</h1>
         )}
         <h5>
-          <Link to="/contact" className="contact-link">Contact</Link> us to learn more
+          <Link to="/contact" className="contact-link">
+            Contact
+          </Link>{" "}
+          us to learn more
         </h5>
       </div>
       <Footer />
