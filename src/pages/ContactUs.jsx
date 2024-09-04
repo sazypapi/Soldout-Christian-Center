@@ -3,6 +3,7 @@ import phone from "../assets/phone.png";
 import instagram from "../assets/ig.png";
 import email from "../assets/email.png";
 import Footer from "../components/Footer";
+import facebookc from "../assets/facebookc.png";
 const ContactUs = () => {
   return (
     <>
@@ -34,10 +35,10 @@ const ContactUs = () => {
             <h4>soldoutchristiancenter2015@gmail.com</h4>
           </div>
         </a>
-        <a href="tel:08141998600">
+        <a href="https://www.facebook.com/profile.php?id=61564928609646&mibextid=ZbWKwL">
           <div className="contact-card">
-            <img src={phone} alt="" />
-            <h4>08141998600</h4>
+            <img src={facebookc} alt="" />
+            <h4>Soldout Christian Center</h4>
           </div>
         </a>
 

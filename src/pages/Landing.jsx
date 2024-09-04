@@ -19,17 +19,24 @@ const Landing = () => {
 
   useEffect(() => {
     const body = document.querySelector("body");
-    
+
+    const timer = setTimeout(() => {
+      if (!modalState) {
+        dispatch(setModal());
+      }
+    }, 5000);
+
     if (modalState) {
-      disableBodyScroll(body); // Disable scroll when modal is open
+      disableBodyScroll(body); 
     } else {
-      clearAllBodyScrollLocks(); // Enable scroll when modal is closed
+      clearAllBodyScrollLocks(); 
     }
 
     return () => {
-      clearAllBodyScrollLocks(); // Cleanup to ensure scroll is enabled when component unmounts
+      clearTimeout(timer);
+      clearAllBodyScrollLocks(); 
     };
-  }, [modalState]);
+  }, [modalState, dispatch]);
 
   return (
     <>
