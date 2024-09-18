@@ -7,9 +7,9 @@ const programs = [
   {
     id: 1,
     name: "Praise Quake",
-    date: "October 6th, 2024",
+    date: "October 5th, 2024",
     description:
-      "Praise Quake is our annual praise program that has had ministers like Frank Edwards, Victoria Orenze,Buchi, Preye Odede, Uche Unlimited and many more grace her stage. The program's main aim is to capture souls for God through truthful and soulful worship.",
+      "Praise Quake is our annual praise program that has had ministers like Frank Edwards, Victoria Orenze,Buchi, Preye Odede, Uche Unlimited and many more grace her stage. The program's main aim is to capture souls for God through truthful and soulful worship. This year we have artists like Pastor Lawrence Oyor, Buchi, Steve Hills, Uche Unlimited and many more gracing our stage. DON'T MISS IT!",
     img: praiseQuake,
     location: "Mater dei schools, 109 Marwa Road, Satellite town, Lagos",
     imgSquare: praiseQuakeSquare,
